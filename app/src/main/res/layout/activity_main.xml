@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Operations: "
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgOperations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rbRead"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rbRead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Read"/>
+
+
+        <RadioButton
+            android:id="@+id/rbWrite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Write"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvNumberOfRecords"
+        android:text="Number of records:"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgNumberOfRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="10"/>
+
+        <RadioButton
+            android:id="@+id/rb100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="1_00"/>
+
+        <RadioButton
+            android:id="@+id/rb1000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="1_000"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync Realm"/>
+
+    <Button
+        android:id="@+id/btSyncAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync-Async Realm"/>
+
+    <Button
+        android:id="@+id/btAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Async Realm"/>
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Clear"/>
+
+</LinearLayout>
